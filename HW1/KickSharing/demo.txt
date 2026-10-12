@@ -1,0 +1,26 @@
+# Строки, начинающиеся с #, игнорируются.
+# Формат: <команда> <аргументы через пробел>
+
+# --- Валидная техника (пройдёт техосмотр) ---
+ADD_SCOOTER SC-001 1.2 8
+ADD_SCOOTER SC-002 1.5 4
+ADD_EBIKE   EB-001 2.4 6
+ADD_BICYCLE BC-001 9
+
+# --- Отклоняемая техника ---
+ADD_SCOOTER SC-003 -0.1 7
+
+# --- Вещи на баланс ---
+ADD_HELMET  HM-001 M
+ADD_HELMET  HM-002 L
+ADD_DOCK    DS-001 10
+ADD_CABINET CC-001 8
+
+# --- Отчёты ---
+REPORT
+LIST
+ENERGY
+NEWBIES
+COUNTS
+
+QUIT
